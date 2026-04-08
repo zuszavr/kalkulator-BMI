@@ -26,42 +26,42 @@ namespace kalkulator_BMI
 
                     if (bmi < 16)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - wygłodzenie";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - wygłodzenie";
                         progressBar.Value = 16;
                     }
                     else if (bmi < 17)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - wychudzenie";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - wychudzenie";
                         progressBar.Value = 17;
                     }
                     else if (bmi < 18.5)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - niedowaga";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - niedowaga";
                         progressBar.Value = 19;
                     }
                     else if (bmi < 25)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - norma";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - norma";
                         progressBar.Value = 25;
                     }
                     else if (bmi < 30)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - nadwaga";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - nadwaga";
                         progressBar.Value = 30;
                     }
                     else if (bmi < 35)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - otyłość I stopnia";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - otyłość I stopnia";
                         progressBar.Value = 35;
                     }
                     else if (bmi < 40)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - otyłość II stopnia";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - otyłość II stopnia";
                         progressBar.Value = 37;
                     }
                     else if (bmi >= 40)
                     {
-                        lwynik.Text = "Twoje BMI: " + bmi + " - otyłość III stopnia";
+                        lwynik.Text = "Twoje BMI: " + bmi.ToString("F2") + " - otyłość III stopnia";
                         progressBar.Value = 40;
                     }
                 }
